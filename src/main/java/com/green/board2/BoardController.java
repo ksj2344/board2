@@ -33,4 +33,9 @@ public class BoardController {
     public int putBoard(@RequestBody BoardPutReq p){
         return service.putBoard(p);
     }
+
+    @DeleteMapping
+    public int delBoard(BoardDelReq p){
+        return service.delReq(p);
+    }
 }

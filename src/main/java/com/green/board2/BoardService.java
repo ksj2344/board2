@@ -1,9 +1,6 @@
 package com.green.board2;
 
-import com.green.board2.model.BoardGetOneRes;
-import com.green.board2.model.BoardGetRes;
-import com.green.board2.model.BoardPostReq;
-import com.green.board2.model.BoardPutReq;
+import com.green.board2.model.*;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -28,5 +25,9 @@ public class BoardService {
 
     public int putBoard(BoardPutReq p){
         return mapper.putBoard(p);
+    }
+
+    public int delReq(BoardDelReq p){
+        return mapper.delReq(p);
     }
 }
